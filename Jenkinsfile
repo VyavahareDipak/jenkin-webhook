@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/VyavahareDipak/jenkin-webhook.git'
+                git branch:"main" , url: 'https://github.com/VyavahareDipak/jenkin-webhook.git'
             }
         }
         stage('Install Dependencies') {
